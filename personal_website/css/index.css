@@ -1,10 +1,11 @@
 /* index.css */
 body {
-    background-image: url('../images/profile.JPG');
+    background-image: url('../images/profile.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 
 .about {
     text-align: center;
