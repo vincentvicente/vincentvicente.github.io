@@ -3,62 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vincent Zhu's Project Portfolio - AI, Full-stack, and Cloud Projects">
     <title>Vincent Zhu - Projects</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">About Me</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="extras.html">Blog/Hobbies</a></li>
+                <li><a href="extras.html">About</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="projects">
-            <h1>Projects</h1>
-            <article class="project">
-                <h2>LLM-Powered Chatbot with Retrieval Augmented Generation (RAG)</h2>
-                <p><em>Aug 2024 - Present</em></p>
-                <ul>
-                    <li>Developed an LLM-powered conversational assistant utilizing Retrieval Augmented Generation (RAG), enabling enhanced responses based on factual data from Wikipedia.</li>
-                    <li>Implemented the ReAct prompt framework, allowing the assistant to use tools iteratively for question understanding, tool selection, and evaluation before responding or retrying.</li>
-                    <li>Utilized OpenAI for language model integration, LlamaIndex for retrieval-based augmentation, and Chainlit for building the chatbot interface.</li>
-                    <li>Enhanced response accuracy and reliability by integrating Wikipedia as a knowledge base, enabling the model to provide contextually accurate answers.</li>
-                </ul>
-                <p><strong>Skills:</strong> OpenAI API, LlamaIndex, Chainlit, React.js, Retrieval-Augmented Generation (RAG), Machine Learning</p>
+        <div class="projects-header">
+            <h1 class="section-title">Featured Projects</h1>
+            <p class="projects-intro">
+                A showcase of my work in AI-powered systems, full-stack development, and cloud architecture. 
+                Each project demonstrates my ability to build scalable, efficient, and user-centered solutions.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1: Shawk Solution -->
+            <article class="project-card">
+                <div class="project-image">
+                    <span class="project-status status-active">🚀 Current</span>
+                    📚
+                    <!-- 可以替换为: <img src="images/shawk-solution.png" alt="Shawk Solution"> -->
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2 class="project-title">Shawk Solution – RAG Document QA System</h2>
+                        <p class="project-period">Aug 2025 – Present</p>
+                    </div>
+                    
+                    <p class="project-description">
+                        A full-stack RAG (Retrieval-Augmented Generation) document QA system enabling intelligent 
+                        question-answering over uploaded documents with high accuracy content extraction and 
+                        real-time semantic search capabilities.
+                    </p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">1,000+</span>
+                            <span class="stat-label">Documents Supported</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">95%</span>
+                            <span class="stat-label">Extraction Accuracy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">&lt;1.5s</span>
+                            <span class="stat-label">Query Latency</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">50,000+</span>
+                            <span class="stat-label">Indexed Chunks</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="project-highlights">
+                        <li>Developed full-stack RAG system integrating FastAPI, SQLite, and React/TypeScript, supporting 1,000+ PDF/DOCX uploads with 95% accuracy</li>
+                        <li>Built 8+ RESTful APIs for document ingestion, parsing, text chunking, vector embeddings, and semantic search with <1.5s average query latency</li>
+                        <li>Created responsive React frontend with TypeScript, featuring drag-and-drop upload, document list, and real-time chat interface</li>
+                        <li>Implemented robust service pipeline managing 50,000+ indexed text chunks, enabling scalable vector search and offline fallback testing</li>
+                        <li>Tested with 50+ active users for performance validation and user experience optimization</li>
+                    </ul>
+                    
+                    <div class="project-tech">
+                        <span class="project-tech-label">Tech Stack:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Vector Search</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/vincentvicente" target="_blank" class="project-link project-link-primary">
+                            <span>🔗</span> View on GitHub
+                        </a>
+                    </div>
+                </div>
             </article>
-            <article class="project">
-                <h2>Property Company Website Development</h2>
-                <p><em>Mar 2024 - May 2024</em></p>
-                <ul>
-                    <li>Designed using Java, Spring Boot, and Hibernate ORM to manage residential and commercial properties, contracts, listings, and real estate agents, with seamless integration between backend services.</li>
-                    <li>Implemented RESTful APIs using Spring Boot to handle property listings, agent management, and contract processing, enabling efficient communication between frontend and backend.</li>
-                    <li>Used MySQL for data persistence and JPA (Java Persistence API) for database interactions, ensuring secure and efficient CRUD operations.</li>
-                    <li>Included portfolio tracking, contract management, and custom exception handling to ensure a smooth and reliable user experience.</li>
-                </ul>
-                <p><strong>Skills:</strong> Java, Spring Boot, Application Programming Interfaces (API), MySQL, Exception Management</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/vincentvicente/Property-Management-System">Property Management System</a></p>
+
+            <!-- Project 2: Artisk AI Chatbot -->
+            <article class="project-card">
+                <div class="project-image">
+                    <span class="project-status status-completed">✓ Completed</span>
+                    🤖
+                    <!-- 可以替换为: <img src="images/artisk-chatbot.png" alt="Artisk AI Chatbot"> -->
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2 class="project-title">Artisk Inc – Multimodal AI Chatbot</h2>
+                        <p class="project-period">May – Jun 2025</p>
+                    </div>
+                    
+                    <p class="project-description">
+                        An AI-driven conversational chatbot supporting multimodal interactions, integrating 
+                        multiple LLM APIs to deliver intelligent, context-aware responses with low latency.
+                    </p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">20%</span>
+                            <span class="stat-label">Lower Latency</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">35%</span>
+                            <span class="stat-label">More Engagement</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3+</span>
+                            <span class="stat-label">LLM APIs</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="project-highlights">
+                        <li>Integrated ChatGPT, Claude, and Coze APIs for multimodal AI interactions</li>
+                        <li>Optimized backend architecture to handle high-concurrency scenarios</li>
+                        <li>Reduced response latency by 20% through caching and async processing</li>
+                        <li>Built with Java Spring Boot and PostgreSQL for robust data management</li>
+                    </ul>
+                    
+                    <div class="project-tech">
+                        <span class="project-tech-label">Tech Stack:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Claude API</span>
+                            <span class="tech-tag">LLM Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/vincentvicente" target="_blank" class="project-link project-link-primary">
+                            <span>🔗</span> View Demo
+                        </a>
+                    </div>
+                </div>
             </article>
-            <article class="project">
-                <h2>Appointment Management System Development</h2>
-                <p><em>Oct 2023 - Jan 2024</em></p>
-                <ul>
-                    <li>Implemented using Python, SQLite, JSON, and OOP principles, enabling robust appointment scheduling, canceling, and conflict management.</li>
-                    <li>Integrated SQLite and JSON for data persistence, improving user experience by 25% across sessions.</li>
-                    <li>Utilized unittest framework, achieving 90% code coverage and optimizing search algorithms, reducing processing time by 15%.</li>
-                </ul>
-                <p><strong>Skills:</strong> Object-Oriented Programming (OOP), Python, SQLite, Unit Testing</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/vincentvicente/Python-Project">Appointment Management System</a></p>
+
+            <!-- Project 3: Product Publisher System -->
+            <article class="project-card">
+                <div class="project-image">
+                    <span class="project-status status-completed">✓ Completed</span>
+                    📦
+                    <!-- 可以替换为: <img src="images/product-publisher.png" alt="Product Publisher System"> -->
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2 class="project-title">Product Publisher System</h2>
+                        <p class="project-period">Course Project - 1 Semester</p>
+                    </div>
+                    
+                    <p class="project-description">
+                        An automated retail product distribution system using microservices and message queues 
+                        to synchronize data across multiple platforms (NetSuite, Revel) with high reliability.
+                    </p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">30min</span>
+                            <span class="stat-label">Time Saved Daily</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">99%</span>
+                            <span class="stat-label">Sync Reliability</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">AWS</span>
+                            <span class="stat-label">Cloud-Native</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="project-highlights">
+                        <li>Designed microservices architecture with AWS SNS/SQS for event-driven communication</li>
+                        <li>Integrated with external systems (NetSuite, Revel) for seamless data synchronization</li>
+                        <li>Implemented asynchronous processing to handle high-volume product updates</li>
+                        <li>Automated manual workflows, saving 30 minutes of daily operations</li>
+                    </ul>
+                    
+                    <div class="project-tech">
+                        <span class="project-tech-label">Tech Stack:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">AWS SNS/SQS</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Event-Driven</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/vincentvicente" target="_blank" class="project-link project-link-secondary">
+                            <span>📄</span> View Architecture
+                        </a>
+                    </div>
+                </div>
             </article>
-        </section>
+
+            <!-- Project 4: Customer Service System -->
+            <article class="project-card">
+                <div class="project-image">
+                    <span class="project-status status-completed">✓ Completed</span>
+                    🛠️
+                    <!-- 可以替换为: <img src="images/customer-service.png" alt="Customer Service System"> -->
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2 class="project-title">Customer Service System</h2>
+                        <p class="project-period">2-Month Project</p>
+                    </div>
+                    
+                    <p class="project-description">
+                        An automated customer service platform with appointment scheduling and issue tracking, 
+                        featuring CI/CD pipelines for rapid deployment and system reliability.
+                    </p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">80%</span>
+                            <span class="stat-label">Faster Deployment</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">CI/CD</span>
+                            <span class="stat-label">Automated Pipeline</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">AOP</span>
+                            <span class="stat-label">Logging & Security</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="project-highlights">
+                        <li>Built backend services with Spring Boot and Spring AOP for logging and security</li>
+                        <li>Implemented CI/CD pipeline using AWS CodePipeline for automated deployment</li>
+                        <li>Designed appointment scheduling system with conflict detection and resolution</li>
+                        <li>Improved deployment speed by 80% through automation</li>
+                    </ul>
+                    
+                    <div class="project-tech">
+                        <span class="project-tech-label">Tech Stack:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Spring AOP</span>
+                            <span class="tech-tag">AWS CodePipeline</span>
+                            <span class="tech-tag">CI/CD</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/vincentvicente" target="_blank" class="project-link project-link-primary">
+                            <span>🔗</span> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Legacy Projects Section -->
+            <article class="project-card">
+                <div class="project-image">
+                    💼
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2 class="project-title">Additional Projects</h2>
+                    </div>
+                    
+                    <p class="project-description">
+                        More projects showcasing my full-stack development and problem-solving skills.
+                    </p>
+                    
+                    <ul class="project-highlights">
+                        <li><strong>LLM-Powered Chatbot with RAG</strong> - Conversational AI using LlamaIndex and Chainlit (Aug 2024 - Present)</li>
+                        <li><strong>Property Management System</strong> - Real estate platform with Spring Boot and MySQL (Mar - May 2024)</li>
+                        <li><strong>Appointment Management System</strong> - Python-based scheduling with SQLite (Oct 2023 - Jan 2024)</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/vincentvicente" target="_blank" class="project-link project-link-outline">
+                            <span>📚</span> View All on GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Vincent Zhu</p>
+        <p><strong>Let's Connect!</strong></p>
+        <p>
+            <a href="mailto:qiyuanzhu522@gmail.com">qiyuanzhu522@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/vincentvicente" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2024 Vincent Zhu. All rights reserved.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

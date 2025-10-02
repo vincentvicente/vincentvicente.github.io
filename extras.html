@@ -3,51 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincent Zhu - Journey & Hobbies</title>
+    <meta name="description" content="Learn more about Vincent Zhu - Hobbies, Languages, and Journey">
+    <title>Vincent Zhu - About Me</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/extras.css">
-    <style>
-        .gallery-img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">About Me</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="extras.html" class="active">Blog/Hobbies</a></li>
+                <li><a href="extras.html" class="active">About</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="extras">
-            <h1>Journey</h1>
-            <article class="journey">
-                <h3>My Transition into Software Engineering</h3>
-                <p>My journey into software engineering was largely influenced by my previous internship experiences. During my time working in major tech companies in China as an operations and product intern, I developed a deep interest in understanding algorithms, data structures, and the underlying logic of various features. This curiosity led me to explore programming further, ultimately inspiring my transition into software engineering. The combination of my hands-on experience in product management and my growing knowledge in software development has provided me with a unique perspective that fuels my passion for building efficient, user-centered systems.</p>
-            </article>
-            <section class="hobbies">
-                <h3>Interests & Hobbies</h3>
-                <ul>
-                    <li><strong>Travelling:</strong> I've been to over 20 countries around the world.</li>
-                    <li><strong>Sports:</strong> I'm an amateur powerlifter. I am also a big basketball fan.</li>
-                </ul>
+        <div class="extras-header">
+            <h1 class="section-title">More About Me</h1>
+            <p class="extras-intro">
+                Beyond coding and software engineering, here's a glimpse into my journey, 
+                interests, and what makes me unique.
+            </p>
+        </div>
+
+        <div class="extras-content">
+            <!-- Journey Section -->
+            <section class="extras-section">
+                <h2>💡 My Journey into Tech</h2>
+                <div class="journey-content">
+                    <p>
+                        My path to software engineering has been unconventional but rewarding. With a background in 
+                        Portuguese Language and International Public Administration, I discovered my passion for 
+                        technology during internships at major tech companies in China.
+                    </p>
+                    <p>
+                        Working as an operations and product intern, I became fascinated by algorithms, data structures, 
+                        and the logic behind software features. This curiosity led me to pursue a Master's in Computer 
+                        Science at Northeastern University, where I've been maintaining a 4.0 GPA while working on 
+                        cutting-edge projects in AI and cloud computing.
+                    </p>
+                    <p>
+                        My diverse background—combining language skills, public policy thinking, and technical 
+                        expertise—gives me a unique perspective on building user-centered, scalable systems that 
+                        solve real-world problems.
+                    </p>
+                </div>
             </section>
-            <section class="gallery">
-                <h3>Photo Gallery</h3>
-                <img src="images/mexico.JPG" alt="Trips to Mexico" class="gallery-img">
+
+            <!-- Language Skills -->
+            <section class="extras-section">
+                <h2>🌍 Languages I Speak</h2>
+                <p>My multilingual background enables me to communicate effectively in diverse, global teams.</p>
+                
+                <div class="languages-list">
+                    <div class="language-item">
+                        <span class="language-flag">🇨🇳</span>
+                        <div class="language-name">Chinese (Mandarin)</div>
+                        <div class="language-level">Native</div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <span class="language-flag">🇺🇸</span>
+                        <div class="language-name">English</div>
+                        <div class="language-level">Fluent</div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <span class="language-flag">🇧🇷</span>
+                        <div class="language-name">Portuguese</div>
+                        <div class="language-level">Professional</div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <span class="language-flag">🇪🇸</span>
+                        <div class="language-name">Spanish</div>
+                        <div class="language-level">Conversational</div>
+                    </div>
+                </div>
             </section>
-        </section>
+
+            <!-- Hobbies & Interests -->
+            <section class="extras-section">
+                <h2>🎯 Hobbies & Interests</h2>
+                <p>When I'm not coding, you can find me:</p>
+                
+                <div class="hobbies-grid">
+                    <div class="hobby-item">
+                        <div class="hobby-icon">✈️</div>
+                        <div class="hobby-details">
+                            <h4>Traveling</h4>
+                            <p>Visited 20+ countries across 4 continents. Always planning my next adventure!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🏋️</div>
+                        <div class="hobby-details">
+                            <h4>Powerlifting</h4>
+                            <p>Amateur powerlifter focused on strength training and personal fitness goals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🏀</div>
+                        <div class="hobby-details">
+                            <h4>Basketball</h4>
+                            <p>Big NBA fan and weekend basketball player. Team sports teach collaboration!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hobby-item">
+                        <div class="hobby-icon">📚</div>
+                        <div class="hobby-details">
+                            <h4>Learning</h4>
+                            <p>Constantly exploring new technologies, frameworks, and best practices in software development.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fun Facts -->
+            <section class="extras-section">
+                <h2>🎉 Fun Facts</h2>
+                <div class="fun-facts">
+                    <div class="fun-fact">
+                        <span class="fun-fact-icon">🌍</span>
+                        <span class="fun-fact-value">20+</span>
+                        <span class="fun-fact-label">Countries Visited</span>
+                    </div>
+                    
+                    <div class="fun-fact">
+                        <span class="fun-fact-icon">🗣️</span>
+                        <span class="fun-fact-value">4</span>
+                        <span class="fun-fact-label">Languages Spoken</span>
+                    </div>
+                    
+                    <div class="fun-fact">
+                        <span class="fun-fact-icon">🎓</span>
+                        <span class="fun-fact-value">3</span>
+                        <span class="fun-fact-label">University Degrees</span>
+                    </div>
+                    
+                    <div class="fun-fact">
+                        <span class="fun-fact-icon">💻</span>
+                        <span class="fun-fact-value">4.0</span>
+                        <span class="fun-fact-label">GPA in CS</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery -->
+            <section class="extras-section">
+                <h2>📸 Photo Gallery</h2>
+                <p>Some memorable moments from my travels and experiences:</p>
+                
+                <div class="photo-gallery">
+                    <div class="gallery-item">
+                        <img src="images/mexico.JPG" alt="Trip to Mexico" class="gallery-img">
+                        <div class="gallery-caption">Adventure in Mexico 🇲🇽</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/parachuting.JPG" alt="Parachuting Experience" class="gallery-img">
+                        <div class="gallery-caption">Skydiving Adventure 🪂</div>
+                    </div>
+                    
+                    <!-- 可以添加更多照片 -->
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="extras-section" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); color: white; border: none;">
+                <h2 style="color: white; border-color: rgba(255,255,255,0.3);">👋 Let's Connect!</h2>
+                <p style="color: rgba(255,255,255,0.95); font-size: 1.125rem;">
+                    I'm always interested in meeting new people, discussing technology, or exploring collaboration opportunities. 
+                    Whether you want to chat about AI, full-stack development, or just grab a virtual coffee, feel free to reach out!
+                </p>
+                <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn" style="background: white; color: var(--primary-color);">📧 Contact Me</a>
+                    <a href="files/Vincent_Zhu_Resume.pdf" download class="btn" style="background: transparent; color: white; border: 2px solid white;">📄 Download Resume</a>
+                </div>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Vincent Zhu</p>
+        <p><strong>Let's Connect!</strong></p>
+        <p>
+            <a href="mailto:qiyuanzhu522@gmail.com">qiyuanzhu522@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/vincentvicente" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2024 Vincent Zhu. All rights reserved.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

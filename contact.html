@@ -3,44 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Vincent Zhu - Software Engineer">
     <title>Vincent Zhu - Contact</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">About Me</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="extras.html">Blog/Hobbies</a></li>
+                <li><a href="extras.html">About</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="contact">
-            <h1>Contact Information</h1>
-            <p>If you'd like to get in touch, you can reach me through the following methods:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:Vincentvicenteqy@outlook.com">Vincentvicenteqy@outlook.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/">LinkedIn Profile</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/vincentvicente">GitHub Profile</a></li>
-            </ul>
-            <h2>Contact Form</h2>
-            <form action="mailto:Vincentvicenteqy@outlook.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-                <input type="submit" value="Send">
-            </form>
-        </section>
+        <div class="contact-header">
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="contact-intro">
+                I'm always open to discussing new opportunities, collaborations, or just having a chat about technology. 
+                Feel free to reach out through any of the following methods.
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <ul class="contact-methods">
+                    <li class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:qiyuanzhu522@gmail.com">qiyuanzhu522@gmail.com</a>
+                            <p>Best way to reach me</p>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-method">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank">Qiyuan Vincent Zhu</a>
+                            <p>Let's connect professionally</p>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-method">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/vincentvicente" target="_blank">@vincentvicente</a>
+                            <p>Check out my code</p>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Seattle, WA, USA</p>
+                            <p>Open to remote opportunities</p>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="social-links">
+                    <h3>Connect on Social Media</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/vincentvicente" target="_blank" class="social-icon" title="GitHub">🔗</a>
+                        <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank" class="social-icon" title="LinkedIn">💼</a>
+                        <a href="mailto:qiyuanzhu522@gmail.com" class="social-icon" title="Email">📧</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Send a Message</h2>
+                <form id="contactForm" action="mailto:qiyuanzhu522@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Collaboration">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message 📨</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <h3>Looking to hire or collaborate?</h3>
+            <p>Download my resume or view my portfolio to learn more about my experience and skills.</p>
+            <div class="quick-actions-buttons">
+                <a href="files/Vincent_Zhu_Resume.pdf" download class="quick-action-btn">
+                    📄 Download Resume
+                </a>
+                <a href="projects.html" class="quick-action-btn">
+                    💻 View Projects
+                </a>
+                <a href="experience.html" class="quick-action-btn">
+                    💼 View Experience
+                </a>
+            </div>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Vincent Zhu</p>
+        <p><strong>Let's Connect!</strong></p>
+        <p>
+            <a href="mailto:qiyuanzhu522@gmail.com">qiyuanzhu522@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/vincentvicente" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2024 Vincent Zhu. All rights reserved.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

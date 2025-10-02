@@ -3,53 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincent Zhu - About Me</title>
+    <meta name="description" content="Vincent Zhu - Full-stack Software Engineer specializing in AI, Cloud, and scalable systems">
+    <title>Vincent Zhu - Software Engineer</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="extras.html">Blog/Hobbies</a></li>
+                <li><a href="extras.html">About</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="about">
-            <h1>Vincent Zhu</h1>
-            <p>I am a Master's student in Computer Science at Northeastern University, with extensive programming skills and software engineering experience, dedicated to building scalable and efficient systems.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1 class="hero-title">Vincent Zhu</h1>
+                <h2 class="hero-subtitle">Full-stack Software Engineer</h2>
+                <p class="hero-description">
+                    Master's student in Computer Science at Northeastern University, specializing in AI-powered systems, 
+                    cloud architecture, and scalable full-stack applications. Passionate about building intelligent, 
+                    user-centered solutions that make a real impact.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="files/Vincent_Zhu_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+                </div>
+                <div class="quick-links">
+                    <a href="https://github.com/vincentvicente" target="_blank" class="social-link">
+                        <span>🔗</span> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank" class="social-link">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="mailto:qiyuanzhu522@gmail.com" class="social-link">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/headshot.JPG" alt="Vincent Zhu" class="profile-image">
+            </div>
         </section>
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Master of Computer Science</strong><br>
-                    Northeastern University, Seattle, WA<br>
-                    <em>Sep. 2023 – Mar. 2026</em> (GPA: 4.0)
-                </li>
-                <li>
-                    <strong>International Master of Public Administration</strong><br>
-                    University of Pennsylvania, Philadelphia, PA<br>
-                    <em>Aug. 2022 – Jun. 2023</em> (GPA: 4.0)
-                </li>
-                <li>
-                    <strong>Bachelor of Arts in Portuguese Language</strong><br>
-                    Beijing Foreign Studies University, Beijing, China<br>
-                    <em>Sep. 2017 – Jun. 2021</em>
-                </li>
-            </ul>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>React & TypeScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Vue.js</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS/JavaScript</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Java Spring Boot</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Node.js/Express</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">🗄️</div>
+                    <h3>Database & Storage</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MySQL/PostgreSQL</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MongoDB</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Redis</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>AWS (ECS, S3, Lambda)</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Docker & CI/CD</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Terraform</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>LangChain & RAG</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>OpenAI & Gemini API</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>LlamaIndex</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">🛠️</div>
+                    <h3>Tools & Others</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git & GitHub</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>RESTful APIs</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Agile/Scrum</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background and achievements</p>
+            
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-card">
+                        <h3 class="education-degree">Master of Science in Computer Science</h3>
+                        <p class="education-school">Northeastern University, Seattle, WA</p>
+                        <p class="education-period">Sep 2023 – Mar 2026</p>
+                        <span class="education-gpa">GPA: 4.0/4.0</span>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-card">
+                        <h3 class="education-degree">Master of International Public Administration</h3>
+                        <p class="education-school">University of Pennsylvania, Philadelphia, PA</p>
+                        <p class="education-period">Aug 2022 – Jun 2023</p>
+                        <span class="education-gpa">GPA: 4.0/4.0</span>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-card">
+                        <h3 class="education-degree">Bachelor of Arts in Portuguese Language</h3>
+                        <p class="education-school">Beijing Foreign Studies University, Beijing, China</p>
+                        <p class="education-period">Sep 2017 – Jun 2021</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+
+    <footer id="contact">
+        <p><strong>Let's Connect!</strong></p>
         <p>
-            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/">LinkedIn Profile</a><br>
-            <strong>GitHub:</strong> <a href="https://github.com/vincentvicente">GitHub Profile</a><br>
-            <strong>Email:</strong> <a href="mailto:Vincentvicenteqy@outlook.com">Vincentvicenteqy@outlook.com</a>
+            <a href="mailto:qiyuanzhu522@gmail.com">qiyuanzhu522@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/qiyuan-zhu-6171b9249/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/vincentvicente" target="_blank">GitHub</a>
         </p>
+        <p>&copy; 2024 Vincent Zhu. All rights reserved.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
